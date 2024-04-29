@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from "./Home";
-import Resume from "./Resume";
+import Home from "./Home/Home";
+import Resume from "./Resume/Resume";
 import Projects from "./Projects";
-import Contact from "./Contact";
+import Contact from "./Contact/Contact";
 
 const App: React.FC = () => (
       <BrowserRouter>

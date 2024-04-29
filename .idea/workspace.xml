@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57003f87-4953-44e7-939f-c1a01adf9813" name="Changes" comment="" />
+    <list default="true" id="57003f87-4953-44e7-939f-c1a01adf9813" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/Contact/Contact.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/Contact/Contact.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,7 +47,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2023.2.1\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
+    "ts.external.directory.path": "C:\\Users\\daoa\\Documents\\Personal Projects\\vivivoid.github.io\\my-app\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -73,6 +76,7 @@
       <workItem from="1713282161755" duration="4508000" />
       <workItem from="1713885004501" duration="17250000" />
       <workItem from="1714318685061" duration="4765000" />
+      <workItem from="1714365025502" duration="598000" />
     </task>
     <servers />
   </component>

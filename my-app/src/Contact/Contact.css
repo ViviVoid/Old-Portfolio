@@ -1,0 +1,35 @@
+.connections {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.connectionsPane {
+    padding: 0.5em;
+    margin: 0.5em;
+    background-color: ivory;
+}
+
+.connections div h4 {
+    text-align: center;
+
+}
+
+.socialEntryList {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    /*flex-wrap: wrap;*/
+
+}
+
+.socialEntryImage {
+    width: 80%;
+    margin: 1em 1em 0 1em;
+}
+
+textarea {
+    resize: none;
+}

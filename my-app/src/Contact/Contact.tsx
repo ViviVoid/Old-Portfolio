@@ -1,5 +1,12 @@
-import SideNavigationBar from "../SideNavigationBar";
 import React, { useState } from 'react';
+import "./Contact.css";
+import daoLogo from "../DaoLogo.png";
+import 'bootstrap/dist/css/bootstrap.css';
+
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
+import {Row} from "react-bootstrap";
+
 
 //Framework?
 
@@ -74,68 +81,114 @@ const Contact: React.FC = () => {
 
     return (
         <div id={"mainFlexBody"}>
-            <div id={"sideBar"}>
-                <SideNavigationBar />
-            </div>
             <div id={"contentPage"}>
-                <div id={"greeting"}>
-                    <h1>
-                        Looking to connect?
-                    </h1>
+                <h1>
+                    Looking to connect?
+                </h1>
+                <div id={"connections"} className={"connections"}>
+                    <div id={"email"} className={"connectionsPane"}>
 
-                    <p>
-                        Fill the form below and I'll get in touch with you!
-                    </p>
+                        <h4>
+                            Fill the form below and I'll get in touch with you through email!
+                        </h4>
 
-                    <form
-                        className="flex flex-col gap-4 justify-center"
-                        onSubmit={handleSubmit}>
-                        <div className="flex flex-col gap-1">
-                            <input
-                                className="w-full rounded-md border-2 border-slate-300 px-2 py-1 outline-purple-500"
-                                type="text"
-                                name="name"
-                                value={formState.name}
+                        <form
+                            className="needs-validation" noValidate={true}
+                            onSubmit={handleSubmit}>
+                            <div className="form-group">
+                                <input
+                                    className="form-control"
+                                    type="text"
+                                    name="name"
+                                    value={formState.name}
+                                    onChange={handleChange}
+                                    placeholder="Name"
+                                />
+                                {errors.name && <p className="text-sm text-red-400">{errors.name}</p>}
+                            </div>
+
+                            <div className="form-group">
+                                <input
+                                    className="form-control"
+                                    type="email"
+                                    name="email"
+                                    value={formState.email}
+                                    onChange={handleChange}
+                                    placeholder="Email"
+                                />
+                                {errors.email && <p className="text-sm text-red-400">{errors.email}</p>}
+                            </div>
+
+                            <div className="form-group">
+                            <textarea
+                                className="form-control"
+                                name="message"
+                                value={formState.message}
                                 onChange={handleChange}
-                                placeholder="Name"
+                                placeholder="Message"
+                                rows={6}
                             />
-                            {errors.name && <p className="text-sm text-red-400">{errors.name}</p>}
-                        </div>
+                                {errors.message && (
+                                    <p className="text-sm text-red-400">{errors.message}</p>
+                                )}
+                            </div>
 
-                        <div className="flex flex-col gap-1">
-                            <input
-                                className="w-full rounded-md border-2 border-slate-300 px-2 py-1 outline-purple-500"
-                                type="email"
-                                name="email"
-                                value={formState.email}
-                                onChange={handleChange}
-                                placeholder="Email"
-                            />
-                            {errors.email && <p className="text-sm text-red-400">{errors.email}</p>}
-                        </div>
+                            <button
+                                disabled={isSubmitting}
+                                className="btn btn-primary"
+                                type="submit"
+                            >
+                                {isSubmitting ? 'Submitting...' : 'Submit'}
+                            </button>
+                        </form>
 
-                        <div className="flex flex-col gap-1">
-                        <textarea
-                            className="w-full rounded-md border-2 border-slate-300 px-2 py-1 outline-purple-500"
-                            name="message"
-                            value={formState.message}
-                            onChange={handleChange}
-                            placeholder="Message"
-                            rows={6}
-                        />
-                            {errors.message && (
-                                <p className="text-sm text-red-400">{errors.message}</p>
-                            )}
-                        </div>
+                        <Form>
+                            <Row>
+                            <Form.Group className="mb-3" controlId="formBasicEmail">
+                                <Form.Label>First Name</Form.Label>
+                                <Form.Control placeholder="First Name" />
+                            </Form.Group>
 
-                        <button
-                            disabled={isSubmitting}
-                            className="rounded-md bg-purple-500 text-white px-2 py-1 block"
-                            type="submit"
-                        >
-                            {isSubmitting ? 'Submitting...' : 'Submit'}
-                        </button>
-                    </form>
+                            <Form.Group className="mb-3" controlId="formBasicEmail">
+                                <Form.Label>Last Name</Form.Label>
+                                <Form.Control placeholder="Last Name" />
+                            </Form.Group>
+                            </Row>
+
+                            <Form.Group className="mb-3" controlId="formBasicEmail">
+                                <Form.Label>Email address</Form.Label>
+                                <Form.Control type="email" placeholder="Enter email" />
+                            </Form.Group>
+
+                            <Form.Group className="mb-3" controlId="formBasicPassword">
+                                <Form.Label>Message</Form.Label>
+                                <Form.Control as="textarea" placeholder="Message" />
+                            </Form.Group>
+                            <Button variant="primary" type="submit">
+                                Submit
+                            </Button>
+                        </Form>
+                    </div>
+
+                    <div id={"socialConnect"} className={"connectionsPane"}>
+                        <h4>
+                            Connect here through my socials!
+                        </h4>
+                        <div className={"socialEntryList"}>
+                            <div className={"socialEntry"}>
+                                <img className={"socialEntryImage"} src={daoLogo}  alt={"Linked In Logo"}/>
+                                <p className={"socialEntryTitle"}>LinkedIn</p>
+                            </div>
+                            <div className={"socialEntry"}>
+                                <img className={"socialEntryImage"} src={daoLogo}  alt={"Linked In Logo"}/>
+                                <p className={"socialEntryTitle"}>Handshake</p>
+                            </div>
+                            <div className={"socialEntry"}>
+                                <img className={"socialEntryImage"} src={daoLogo}  alt={"Linked In Logo"}/>
+                                <p className={"socialEntryTitle"}>Github</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -1,7 +1,15 @@
 #AboutMe {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 0.33fr;
+    grid-template-rows: auto auto;
+    padding: 0 2em 2em;
+}
+
+.HomeHeader {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 2em 2em;
 }
 
 #ProfPhoto {
@@ -14,11 +22,7 @@
     margin: 1em;
 }
 
-#AboutMe {
-    padding: 2em;
-}
-
-#AboutMe div h1 {
+h1 {
     text-align: center;
     width: 100%;
     border-radius: 10px;

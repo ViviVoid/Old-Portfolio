@@ -37,6 +37,10 @@
     animation: 1s ease-in-out 0s 1 fade-up;
 }
 
+.scheduleHeader {
+    animation: 1s ease-in-out 0s 1 fade-up;
+}
+
 .schedule h3 {
     border-radius: 5px;
     border-width: 5px;
@@ -268,5 +272,9 @@ a:hover {
 .scheduleEntry {
     background-color: ivory;
     border: black solid;
+    text-align: center;
+}
+
+h1 {
     text-align: center;
 }

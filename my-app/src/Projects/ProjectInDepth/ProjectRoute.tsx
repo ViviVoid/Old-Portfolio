@@ -4,7 +4,7 @@ import "../Projects.css";
 import React from "react";
 import ProjectsList from "../ProjectsList";
 import {useParams} from "react-router-dom";
-import ASDHackathon from "./ASDHackathon";
+import ASDHackathon from "./ASDHackathon/ASDHackathon";
 import Projects from "../Projects";
 import WebsitePortfolio from "./WebsitePortfolio";
 import Wordle from "./Wordle";

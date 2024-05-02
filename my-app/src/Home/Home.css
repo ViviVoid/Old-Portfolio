@@ -5,13 +5,6 @@
     padding: 0 2em 2em;
 }
 
-.HomeHeader {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 0 2em 2em;
-}
-
 #ProfPhoto {
     grid-column: 2;
     grid-row: 1;
@@ -20,13 +13,6 @@
     width:80%;
     border-radius: 10px;
     margin: 1em;
-}
-
-h1 {
-    text-align: center;
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 1px 2px 0 darkslateblue, 0 1px 2px 0 black;
 }
 
 #GrowthMindset {

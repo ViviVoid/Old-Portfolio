@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import "./styles/SideNavigationBar.css"
-import logo from "./DaoLogo.png";
+import "../styles/SideNavigationBar.css"
+import logo from "../DaoLogo.png";
 
 const SideNavigationBar: React.FC = () => (
    <div className={"Side-Navigation-Bar"}>

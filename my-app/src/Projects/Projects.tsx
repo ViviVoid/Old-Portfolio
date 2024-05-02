@@ -1,10 +1,17 @@
 import App from "../App";
+import ProjectsHeader from "./ProjectsHeader";
+import "./Projects.css";
+import React from "react";
+import ProjectsList from "./ProjectsList";
 
 const Projects = () => {
     return (
-        <h1>Hello World</h1>
-
-        // <App />
+        <div id={"mainFlexBody"}>
+            <div id={"contentPage"}>
+                <ProjectsHeader/>
+                <ProjectsList/>
+            </div>
+        </div>
     );
 }
 

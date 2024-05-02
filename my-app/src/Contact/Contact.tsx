@@ -3,9 +3,13 @@ import "./Contact.css";
 import daoLogo from "../DaoLogo.png";
 import 'bootstrap/dist/css/bootstrap.css';
 
+import linkedInLogo from "./LinkedInLogo.png";
+import githubLogo from "./github-mark.svg";
+
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import {Row} from "react-bootstrap";
+import {Col, Row} from "react-bootstrap";
+import {Link} from "react-router-dom";
 
 
 //Framework?
@@ -17,66 +21,17 @@ interface FormState {
 }
 
 const Contact: React.FC = () => {
-    const [formState, setFormState] = useState<FormState>({
-        name: '',
-        email: '',
-        message: '',
-    });
-    const [errors, setErrors] = useState<FormState>({
-        name: '',
-        email: '',
-        message: '',
-    });
 
-    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [validated, setValidated] = useState(false);
 
-    const validateEmail = (email: string) => {
-        const re = /\S+@\S+\.\S+/;
-        return re.test(email);
-    };
-
-    const handleChange = (
-        e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-    ) => {
-        setFormState({...formState, [e.target.name]: e.target.value});
-    };
-
-    const handleSubmit = async (e: React.FormEvent) => {
-        e.preventDefault();
-
-        try {
-            setIsSubmitting(true);
-            const errors = {name: '', email: '', message: ''};
-
-            if (formState.name === '') {
-                errors.name = 'Name is required';
-            }
-
-            if (formState.email === '' || !validateEmail(formState.email)) {
-                errors.email = 'Valid email is required';
-            }
-
-            if (formState.message === '') {
-                errors.message = 'Message is required';
-            }
-
-            setErrors(errors);
-
-            if (!errors.name && !errors.email && !errors.message) {
-                await fetch('/api/email', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify(formState),
-                });
-                setFormState({name: '', email: '', message: ''});
-            }
-        } catch (error) {
-            // handle error here
-        } finally {
-            setIsSubmitting(false);
+    const handleSubmit = (event : any) => {
+        const form = event.currentTarget;
+        if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
         }
+
+        setValidated(true);
     };
 
     return (
@@ -92,77 +47,55 @@ const Contact: React.FC = () => {
                             Fill the form below and I'll get in touch with you through email!
                         </h4>
 
-                        <form
-                            className="needs-validation" noValidate={true}
-                            onSubmit={handleSubmit}>
-                            <div className="form-group">
-                                <input
-                                    className="form-control"
-                                    type="text"
-                                    name="name"
-                                    value={formState.name}
-                                    onChange={handleChange}
-                                    placeholder="Name"
-                                />
-                                {errors.name && <p className="text-sm text-red-400">{errors.name}</p>}
-                            </div>
-
-                            <div className="form-group">
-                                <input
-                                    className="form-control"
-                                    type="email"
-                                    name="email"
-                                    value={formState.email}
-                                    onChange={handleChange}
-                                    placeholder="Email"
-                                />
-                                {errors.email && <p className="text-sm text-red-400">{errors.email}</p>}
-                            </div>
-
-                            <div className="form-group">
-                            <textarea
-                                className="form-control"
-                                name="message"
-                                value={formState.message}
-                                onChange={handleChange}
-                                placeholder="Message"
-                                rows={6}
-                            />
-                                {errors.message && (
-                                    <p className="text-sm text-red-400">{errors.message}</p>
-                                )}
-                            </div>
-
-                            <button
-                                disabled={isSubmitting}
-                                className="btn btn-primary"
-                                type="submit"
-                            >
-                                {isSubmitting ? 'Submitting...' : 'Submit'}
-                            </button>
-                        </form>
-
-                        <Form>
+                        <Form noValidate validated={validated} onSubmit={handleSubmit}>
                             <Row>
-                            <Form.Group className="mb-3" controlId="formBasicEmail">
-                                <Form.Label>First Name</Form.Label>
-                                <Form.Control placeholder="First Name" />
-                            </Form.Group>
-
-                            <Form.Group className="mb-3" controlId="formBasicEmail">
-                                <Form.Label>Last Name</Form.Label>
-                                <Form.Control placeholder="Last Name" />
-                            </Form.Group>
+                                <Form.Group as={Col} className="mb-3" controlId="formBasicEmail">
+                                    {/*<Form.Label>First Name</Form.Label>*/}
+                                    <Form.Control
+                                        required
+                                        type={"text"}
+                                        placeholder="First Name" />
+                                    <Form.Control.Feedback type="invalid">
+                                        Please provide a first name.
+                                    </Form.Control.Feedback>
+                                </Form.Group>
+                                <Form.Group as={Col} className="mb-3" controlId="formBasicEmail">
+                                    {/*<Form.Label>Last Name</Form.Label>*/}
+                                    <Form.Control
+                                        required
+                                        type={"text"}
+                                        placeholder="Last Name" />
+                                    <Form.Control.Feedback type="invalid">
+                                        Please provide a last name.
+                                    </Form.Control.Feedback>
+                                </Form.Group>
                             </Row>
 
+                            {/*<Form.Group className="mb-3" controlId="formBasicEmail">*/}
+                            {/*    /!*<Form.Label>Last Name</Form.Label>*!/*/}
+                            {/*    <Form.Control placeholder="Last Name" />*/}
+                            {/*</Form.Group>*/}
+
                             <Form.Group className="mb-3" controlId="formBasicEmail">
-                                <Form.Label>Email address</Form.Label>
-                                <Form.Control type="email" placeholder="Enter email" />
+                                {/*<Form.Label>Email address</Form.Label>*/}
+                                <Form.Control
+                                    required
+                                    type="email"
+                                    placeholder="Enter email" />
+                                <Form.Control.Feedback type="invalid">
+                                    Please provide a valid email.
+                                </Form.Control.Feedback>
                             </Form.Group>
 
                             <Form.Group className="mb-3" controlId="formBasicPassword">
-                                <Form.Label>Message</Form.Label>
-                                <Form.Control as="textarea" placeholder="Message" />
+                                {/*<Form.Label>Message</Form.Label>*/}
+                                <Form.Control
+                                    required
+                                    as="textarea"
+                                    placeholder="Message" />
+                                <Form.Control.Feedback type="invalid">
+                                    Please provide a message.
+                                </Form.Control.Feedback>
                             </Form.Group>
                             <Button variant="primary" type="submit">
                                 Submit
@@ -175,18 +108,18 @@ const Contact: React.FC = () => {
                             Connect here through my socials!
                         </h4>
                         <div className={"socialEntryList"}>
+                            <Link to={"https://www.linkedin.com/in/aqd453/"}>
+                                <div className={"socialEntry"}>
+                                    <img className={"socialEntryImage"} src={linkedInLogo}  alt={"Linked In Logo"}/>
+                                    <p className={"socialEntryTitle"}>LinkedIn</p>
+                                </div>
+                            </Link>
+                            <Link to={"https://github.com/ViviVoid"}>
                             <div className={"socialEntry"}>
-                                <img className={"socialEntryImage"} src={daoLogo}  alt={"Linked In Logo"}/>
-                                <p className={"socialEntryTitle"}>LinkedIn</p>
-                            </div>
-                            <div className={"socialEntry"}>
-                                <img className={"socialEntryImage"} src={daoLogo}  alt={"Linked In Logo"}/>
-                                <p className={"socialEntryTitle"}>Handshake</p>
-                            </div>
-                            <div className={"socialEntry"}>
-                                <img className={"socialEntryImage"} src={daoLogo}  alt={"Linked In Logo"}/>
+                                <img className={"socialEntryImage"} src={githubLogo}  alt={"GitHub Logo"}/>
                                 <p className={"socialEntryTitle"}>Github</p>
                             </div>
+                            </Link>
                         </div>
                     </div>
                 </div>

@@ -1,5 +1,5 @@
 const HomeHeader:React.FC = () => (
-    <div className={"HomeHeader"}>
+    <div className={"Header"}>
         <h1>
             Andy Dao
         </h1>

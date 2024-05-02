@@ -5,7 +5,9 @@ import Home from "./Home/Home";
 import Resume from "./Resume/Resume";
 import Projects from "./Projects/Projects";
 import Contact from "./Contact/Contact";
-import SideNavigationBar from "./SideNavigationBar";
+import SideNavigationBar from "./Global-Elements/SideNavigationBar";
+import ProjectRoute from "./Projects/ProjectInDepth/ProjectRoute";
+import BackToTopBtn from "./Global-Elements/BackToTopBtn";
 
 const App: React.FC = () => (
       <BrowserRouter>
@@ -14,10 +16,12 @@ const App: React.FC = () => (
           </div>
         <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/Projects/:project" element={<ProjectRoute/>} />
             <Route path="/Projects" element={<Projects />} />
             <Route path="/Contact" element={<Contact />} />
             <Route path="/Resume" element={<Resume />} />
         </Routes>
+          <BackToTopBtn />
       </BrowserRouter>
   );
 

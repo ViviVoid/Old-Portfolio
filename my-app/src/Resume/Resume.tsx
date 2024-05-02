@@ -1,5 +1,5 @@
 import App from "../App";
-import SideNavigationBar from "../SideNavigationBar";
+import SideNavigationBar from "../Global-Elements/SideNavigationBar";
 import AboutMeAndValues from "../Home/AboutMeAndValues";
 import Schedule from "../Home/Schedule";
 import React from "react";

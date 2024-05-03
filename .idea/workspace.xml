@@ -39,7 +39,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "reactProject",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/daoa/Documents/Personal Projects/website-portfolio",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
@@ -78,6 +78,7 @@
       <workItem from="1713885004501" duration="17250000" />
       <workItem from="1714318685061" duration="4765000" />
       <workItem from="1714365025502" duration="38646000" />
+      <workItem from="1714730954534" duration="416000" />
     </task>
     <servers />
   </component>

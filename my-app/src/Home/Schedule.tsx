@@ -9,7 +9,7 @@ const Schedule:React.FC = () => {
 
     return (
         <>
-            <div className={"HomeHeader"}>
+            <div className={"Header"}>
                 <h1>Weekly Schedule</h1>
             </div>
             <div className={"schedule"}>

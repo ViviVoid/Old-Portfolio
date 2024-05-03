@@ -1,6 +1,6 @@
 const HomeHeader:React.FC = () => (
     <div className={"Header"}>
-        <h1>
+        <h1 className={"HomeBackgroundImage"}>
             Andy Dao
         </h1>
         <h2>

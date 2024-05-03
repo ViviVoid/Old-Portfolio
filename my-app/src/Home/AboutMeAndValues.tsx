@@ -4,44 +4,51 @@ import "./Home.css"
 import profPhoto from "./profSmaller.jpg"
 
 const AboutMeAndValues:React.FC = () => (
+    <>
+    <h1 className={"Header"}>Personal Statements</h1>
     <div id={"AboutMe"}>
         <div id={"GrowthMindset"}>
-            <h1>
+            <h1 className={"HomeBackgroundImage"}>
                 Growth Mindset
             </h1>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non sodales neque sodales ut etiam sit amet nisl. Tortor at risus viverra adipiscing at. Faucibus ornare suspendisse sed nisi lacus sed viverra tellus. Blandit massa enim nec dui. At auctor urna nunc id. Nisl purus in mollis nunc sed id semper risus in. Enim diam vulputate ut pharetra sit amet aliquam id. Vulputate enim nulla aliquet porttitor lacus. Commodo viverra maecenas accumsan lacus vel facilisis. Neque convallis a cras semper auctor neque vitae tempus. Pellentesque massa placerat duis ultricies lacus sed turpis. Lectus quam id leo in vitae. Ultrices tincidunt arcu non sodales. Eget aliquet nibh praesent tristique magna sit amet purus gravida. Posuere lorem ipsum dolor sit amet consectetur adipiscing. Est lorem ipsum dolor sit amet. Felis bibendum ut tristique et egestas quis ipsum suspendisse ultrices. Justo nec ultrices dui sapien eget mi proin sed libero.
+                Life-long learning is something I live by throughout my academic career. I take active steps to be involved and learn more about my environment, surroundings, and other perspectives. These active steps include immersing myself in other cultures and leadership discussion which puts my outside of my comfort zone. Through organizations like Servant-Leader Roundtable, MSOE AI Club talks, and participating in symposiums and talks, I expand my breadth of knowledge and soft skills.
+            </p>
 
+            <p>
+                A growth mindset to me is more than adding other skills and tools to my toolbox but includes expanding my perspective and approach.
             </p>
         </div>
 
         <div id={"Drive"}>
-            <h1>
+            <h1 className={"HomeBackgroundImage"}>
                 Drive
             </h1>
 
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non sodales neque sodales ut etiam sit amet nisl. Tortor at risus viverra adipiscing at. Faucibus ornare suspendisse sed nisi lacus sed viverra tellus. Blandit massa enim nec dui. At auctor urna nunc id. Nisl purus in mollis nunc sed id semper risus in. Enim diam vulputate ut pharetra sit amet aliquam id. Vulputate enim nulla aliquet porttitor lacus. Commodo viverra maecenas accumsan lacus vel facilisis. Neque convallis a cras semper auctor neque vitae tempus. Pellentesque massa placerat duis ultricies lacus sed turpis. Lectus quam id leo in vitae. Ultrices tincidunt arcu non sodales. Eget aliquet nibh praesent tristique magna sit amet purus gravida. Posuere lorem ipsum dolor sit amet consectetur adipiscing. Est lorem ipsum dolor sit amet. Felis bibendum ut tristique et egestas quis ipsum suspendisse ultrices. Justo nec ultrices dui sapien eget mi proin sed libero.
+                Establishing goals and progress is what comprises my drive to develop software and engage with the development process. Similar to inspiration, I find drive through engaging with recent trends through youtube videos, local tech talks, and engaging in discourse with new individuals. In tandem, I develop goals that intertwine my enjoyment in the process and eventual end goal.
+            </p>
 
+            <p>
+                Drive to me is cultivated by finding the spark of innovation to start the software development process and then creating smart actionable goals to follow through on an end goal and develop myself.
             </p>
 
         </div>
 
         <div id={"Adaptability"}>
-            <h1>
+            <h1 className={"HomeBackgroundImage"}>
                 Adaptability
             </h1>
 
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non sodales neque sodales ut etiam sit amet nisl. Tortor at risus viverra adipiscing at. Faucibus ornare suspendisse sed nisi lacus sed viverra tellus. Blandit massa enim nec dui. At auctor urna nunc id. Nisl purus in mollis nunc sed id semper risus in. Enim diam vulputate ut pharetra sit amet aliquam id. Vulputate enim nulla aliquet porttitor lacus. Commodo viverra maecenas accumsan lacus vel facilisis. Neque convallis a cras semper auctor neque vitae tempus. Pellentesque massa placerat duis ultricies lacus sed turpis. Lectus quam id leo in vitae. Ultrices tincidunt arcu non sodales. Eget aliquet nibh praesent tristique magna sit amet purus gravida. Posuere lorem ipsum dolor sit amet consectetur adipiscing. Est lorem ipsum dolor sit amet. Felis bibendum ut tristique et egestas quis ipsum suspendisse ultrices. Justo nec ultrices dui sapien eget mi proin sed libero.
-
+                
             </p>
 
         </div>
 
         <img src={profPhoto} alt={"Professional Photo of Andy Dao"} id={"ProfPhoto"}/>
     </div>
-        // <App />
-    );
+    </>
+);
 
 export default AboutMeAndValues

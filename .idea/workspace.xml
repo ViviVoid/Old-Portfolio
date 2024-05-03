@@ -6,9 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="57003f87-4953-44e7-939f-c1a01adf9813" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/Projects/ProjectInDepth/ASDHackathon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/Projects/ProjectInDepth/ASDHackathon/ASDHackathon.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/Projects/ProjectInDepth/ASDHackathon/img.png" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/Projects/ProjectInDepth/ASDHackathon/ASDHackathonSite.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/Contact/Contact.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/Contact/Contact.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/Home/AboutMeAndValues.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/Home/AboutMeAndValues.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/Home/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/Home/Home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/Home/HomeHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/Home/HomeHeader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/Home/Schedule.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/Home/Schedule.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-app/src/Projects/ProjectInDepth/ProjectRoute.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/Projects/ProjectInDepth/ProjectRoute.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/Projects/ProjectInDepth/WebsitePortfolio.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/Projects/ProjectInDepth/WebsitePortfolio/WebsitePortfolio.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/Projects/ProjectInDepth/Wordle.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/Projects/ProjectInDepth/Wordle/Wordle.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/styles/browser.css" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/styles/browser.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +49,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "reactProject",
-    "last_opened_file_path": "C:/Users/daoa/Documents/Personal Projects/vivivoid.github.io/my-app/src/Global-Elements",
+    "last_opened_file_path": "C:/Users/daoa/Documents/Personal Projects/vivivoid.github.io/my-app/public",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -55,18 +61,18 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\daoa\Documents\Personal Projects\vivivoid.github.io\my-app\public" />
       <recent name="C:\Users\daoa\Documents\Personal Projects\vivivoid.github.io\my-app\src\Global-Elements" />
       <recent name="C:\Users\daoa\Documents\Personal Projects\vivivoid.github.io\my-app\src\Projects\ProjectInDepth" />
       <recent name="C:\Users\daoa\Documents\Personal Projects\vivivoid.github.io\my-app\src\Projects" />
       <recent name="C:\Users\daoa\Documents\Personal Projects\vivivoid.github.io\my-app\src\Contact" />
-      <recent name="C:\Users\daoa\Documents\Personal Projects\vivivoid.github.io\my-app\src\styles" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\daoa\Documents\Personal Projects\vivivoid.github.io\my-app\src\Projects\ProjectInDepth\WebsitePortfolio" />
+      <recent name="C:\Users\daoa\Documents\Personal Projects\vivivoid.github.io\my-app\src\Projects\ProjectInDepth\Wordle" />
       <recent name="C:\Users\daoa\Documents\Personal Projects\vivivoid.github.io\my-app\src\Projects\ProjectInDepth\ASDHackathon" />
       <recent name="C:\Users\daoa\Documents\Personal Projects\vivivoid.github.io\my-app\src\Global-Elements" />
       <recent name="C:\Users\daoa\Documents\Personal Projects\vivivoid.github.io\my-app\src\Projects\ProjectInDepth" />
-      <recent name="C:\Users\daoa\Documents\Personal Projects\vivivoid.github.io\my-app\src\Projects" />
-      <recent name="C:\Users\daoa\Documents\Personal Projects\vivivoid.github.io\my-app\src\Contact" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -80,7 +86,7 @@
       <workItem from="1713282161755" duration="4508000" />
       <workItem from="1713885004501" duration="17250000" />
       <workItem from="1714318685061" duration="4765000" />
-      <workItem from="1714365025502" duration="22314000" />
+      <workItem from="1714365025502" duration="28810000" />
     </task>
     <servers />
   </component>

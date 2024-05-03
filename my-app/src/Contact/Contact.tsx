@@ -37,7 +37,7 @@ const Contact: React.FC = () => {
     return (
         <div id={"mainFlexBody"}>
             <div id={"contentPage"}>
-                <h1>
+                <h1 className={"Header"}>
                     Looking to connect?
                 </h1>
                 <div id={"connections"} className={"connections"}>

@@ -6,8 +6,8 @@ import ProjectsList from "../ProjectsList";
 import {useParams} from "react-router-dom";
 import ASDHackathon from "./ASDHackathon/ASDHackathon";
 import Projects from "../Projects";
-import WebsitePortfolio from "./WebsitePortfolio";
-import Wordle from "./Wordle";
+import WebsitePortfolio from "./WebsitePortfolio/WebsitePortfolio";
+import Wordle from "./Wordle/Wordle";
 
 const ProjectRoute = (props:any) => {
     const { project } = useParams();

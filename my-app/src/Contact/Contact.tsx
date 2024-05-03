@@ -24,13 +24,22 @@ const Contact: React.FC = () => {
 
     const [validated, setValidated] = useState(false);
 
+    const [showSuccess, setShowSuccess] = React.useState(false);
+
     const handleSubmit = (event : any) => {
         const form = event.currentTarget;
         if (form.checkValidity() === false) {
             event.preventDefault();
             event.stopPropagation();
+        } else {
+            event.preventDefault();
+            (document.getElementById("emailForm") as HTMLFormElement).reset();
+            setShowSuccess(true);
+            setTimeout(() => {
+                setShowSuccess(false);}, 1000
+            );
+            console.log("Poggers!");
         }
-
         setValidated(true);
     };
 
@@ -40,6 +49,7 @@ const Contact: React.FC = () => {
                 <h1 className={"Header"}>
                     Looking to connect?
                 </h1>
+                {showSuccess ? <div className={"SuccessOverlay"} /> : null}
                 <div id={"connections"} className={"connections"}>
                     <div id={"email"} className={"connectionsPane"}>
 
@@ -47,7 +57,7 @@ const Contact: React.FC = () => {
                             Fill the form below and I'll get in touch with you through email!
                         </h4>
 
-                        <Form noValidate validated={validated} onSubmit={handleSubmit}>
+                        <Form id={"emailForm"} noValidate validated={validated} onSubmit={handleSubmit}>
                             <Row>
                                 <Form.Group as={Col} className="mb-3" controlId="formBasicEmail">
                                     {/*<Form.Label>First Name</Form.Label>*/}

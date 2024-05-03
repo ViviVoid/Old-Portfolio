@@ -10,7 +10,7 @@ const Schedule:React.FC = () => {
     return (
         <>
             <div className={"Header"}>
-                <h1>Weekly Schedule</h1>
+                <h1>Time Committment Visualization</h1>
             </div>
             <div className={"schedule"}>
                 <h3 className="time-slot">8:00 AM</h3>

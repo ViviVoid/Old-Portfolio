@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 class Props {
     name: string;
@@ -12,6 +13,23 @@ class Props {
 
 const ScheduleEntry:React.FC<Props> = (props) => {
     let dayEntries : string[] = props.days;
+
+    // pickTextColor derived from this post
+    // https://stackoverflow.com/questions/3942878/how-to-decide-font-color-in-white-or-black-depending-on-background-color
+    const pickTextColor = (bgColor:String) => {
+        const color = (bgColor.charAt(0) === '#') ? bgColor.substring(1, 7) : bgColor;
+        const r = parseInt(color.substring(0, 2), 16); // hexToR
+        const g = parseInt(color.substring(2, 4), 16); // hexToG
+        const b = parseInt(color.substring(4, 6), 16); // hexToB
+        return (((r * 0.299) + (g * 0.587) + (b * 0.114)) > 186) ?
+            "#000000" : "#ffffff";
+    }
+
+    const entryStyle = {
+        backgroundColor: props.color,
+        color: pickTextColor(props.color)
+    }
+
     return (
         <>
             {dayEntries.map((day) => {
@@ -22,9 +40,9 @@ const ScheduleEntry:React.FC<Props> = (props) => {
                             + " " + props.name.replace(/\s/g, "",)
                             + " start-" + props.starttime
                             + " end-" +props.endtime
-                            + " scheduleEntry"}>
+                            + " scheduleEntry"} style={entryStyle}>
                             <div className={"scheduleEntryText"}>
-                                <a href={props.hyperlink}>{props.name}</a>
+                                <Link to={props.hyperlink}>{props.name}</Link>
                             </div>
                         </div>
                     )

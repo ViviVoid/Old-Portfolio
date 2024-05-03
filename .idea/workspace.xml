@@ -6,15 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="57003f87-4953-44e7-939f-c1a01adf9813" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/Contact/Contact.css" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/Contact/Contact.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-app/src/Contact/Contact.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/Contact/Contact.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/Global-Elements/BackToTopBtn.css" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/Global-Elements/BackToTopBtn.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-app/src/Home/AboutMeAndValues.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/Home/AboutMeAndValues.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-app/src/Home/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/Home/Home.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-app/src/Home/HomeHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/Home/HomeHeader.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-app/src/Home/Schedule.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/Home/Schedule.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/Projects/ProjectInDepth/ProjectRoute.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/Projects/ProjectInDepth/ProjectRoute.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/Projects/ProjectInDepth/WebsitePortfolio.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/Projects/ProjectInDepth/WebsitePortfolio/WebsitePortfolio.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/Projects/ProjectInDepth/Wordle.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/Projects/ProjectInDepth/Wordle/Wordle.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/styles/browser.css" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/styles/browser.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/Home/ScheduleEntry.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/Home/ScheduleEntry.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/Projects/ProjectsList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/Projects/ProjectsList.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +86,7 @@
       <workItem from="1713282161755" duration="4508000" />
       <workItem from="1713885004501" duration="17250000" />
       <workItem from="1714318685061" duration="4765000" />
-      <workItem from="1714365025502" duration="28810000" />
+      <workItem from="1714365025502" duration="38015000" />
     </task>
     <servers />
   </component>

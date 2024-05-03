@@ -4,7 +4,7 @@ const HomeHeader:React.FC = () => (
             Andy Dao
         </h1>
         <h2>
-            Software Engineering Major and Data Science Minor
+            Software Engineering Major with Data Science Minor
         </h2>
     </div>
     // <App />

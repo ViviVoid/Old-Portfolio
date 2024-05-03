@@ -1,0 +1,30 @@
+ul {
+    text-align: left;
+}
+
+#Personal_Brand {
+    padding: 10px;
+}
+
+#Personal_Brand_Sub {
+    display: grid;
+    grid-template: auto / 1fr 1fr 1fr;
+
+}
+
+#Personal_Brand_Sub div{
+    margin: 5px;
+}
+
+#Personal_Brand_Sub ul {
+    list-style-type: none;
+    background: tan;
+    padding: 5px;
+}
+
+#Personal_Brand_Sub ul li{
+    list-style-type: none;
+    background: lightyellow;
+    margin: 5px;
+    padding: 5px;
+}
